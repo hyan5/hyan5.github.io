@@ -46,8 +46,12 @@
         {% if site.email %}
         <email>{{ site.email }}</email>
         {% endif %}
-
         <br>
+        {% if site.location %}
+        <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <autocolor>{{ site.location }}</autocolor>
+        <br>
+        {% endif %}
+
         <br>
         <div class="social-icons">
         {% if site.google_scholar %}
