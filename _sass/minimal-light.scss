@@ -218,17 +218,17 @@ papertitle {
       width: 100%;
     }
 
-    .image.avatar {
-      border-radius: 100%;
-    }
+    // .image.avatar {
+    //   border-radius: 100%;
+    // }
 
       .image.avatar:before {
         display: none;
       }
 
       .image.avatar img {
-        border-radius: 100%;
-        width: 45%;
+        // border-radius: 20%;
+        width: 60%;
         padding: 20px;
         // border: 1px solid #ddd;
         // padding: 3px;
