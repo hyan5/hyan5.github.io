@@ -1,4 +1,4 @@
-## Experience
+## Experiences
 
 <ul style="margin:0 0 5px;">
   <li><autocolor>May. 2021 - current: Graduate Research Assistant, <em>George Mason University</em></autocolor></li>
