@@ -1,5 +1,6 @@
 # Basic Information 
-title: Hao Yan
+title: Hao's Homepage
+name: Hao Yan
 position: Ph.D. Student
 affiliation: George Mason University
 affiliation_link: https://www.gmu.edu/
@@ -9,8 +10,8 @@ email: hyan5 (at) gmu.edu
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: Hao's Homepage
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+description: Hao Yan is a PhD student in the Department of Computer Science and GMU NLP Group at George Mason University, advised by Prof. Ziyu Yao.
+canonical: https://hyan5.github.io
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
