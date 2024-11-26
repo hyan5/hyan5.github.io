@@ -22,7 +22,6 @@
       <strong><i style="color:#e74d3c">Oral Presentation</i></strong>
     </div>
   </div>
-
 </div>
 </li>
 
