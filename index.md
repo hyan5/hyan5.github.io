@@ -12,7 +12,7 @@ Recently, I conducted research on interactive (conversational) code generation. 
 
 Before my Ph.D. study, I obtained my master's degree in Computer Science from George Mason University in 2020 and my bachelor's degree in Electronic and Information Engineering from Fujian Normal University in 2017.
 
-In my spare time. I enjoy engaging in various indoor/outdoor activities such as basketball, badminton, swimming, visiting the gym, and hiking. In addition, I really enjoy tasting delicious foods and cooking by myself.
+In my spare time. I enjoy engaging in various indoor/outdoor activities such as basketball, badminton, swimming, and hiking. In addition, I also love food and enjoy trying different dishes and cooking for myself whenever I can.
 
 ## Research Interests
 
