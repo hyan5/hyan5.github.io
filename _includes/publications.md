@@ -8,8 +8,8 @@
     <div class="author">Sai Adith Senthil Kumar, <strong>Hao Yan</strong>, Saipavan Perepa, Murong Yue, Ziyu Yao</div>
     <div class="periodical"><em>arXiv preprint, 2025</em></div>
     <div class="links">
-      <a href="https://arxiv.org/pdf/2305.08195.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      <a href="https://github.com/hyan5/Learning_to_Simulate_NL_Feedback" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="https://arxiv.org/pdf/2504.06460" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <!-- <a href="https://github.com/hyan5/Learning_to_Simulate_NL_Feedback" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a> -->
     </div>
   </div>
 </li>
