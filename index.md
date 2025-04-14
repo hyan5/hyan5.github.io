@@ -30,4 +30,6 @@ In my spare time. I enjoy engaging in various indoor/outdoor activities such as 
 
 {% include_relative _includes/services.md %}
 
+{% include_relative _includes/talks.md %}
+
 {% include_relative _includes/awards.md %}
