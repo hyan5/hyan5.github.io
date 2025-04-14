@@ -19,8 +19,8 @@ In my spare time. I enjoy engaging in various indoor/outdoor activities such as 
 - Human-AI Interaction
 - Semantic Parsing
 - Question Answering
-- Text Generation
-- AI Safety
+- Code Generation
+- LLM Safety
 
 {% include_relative _includes/news.md %}
 
