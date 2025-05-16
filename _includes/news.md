@@ -1,5 +1,5 @@
 ## News
-- [May. 2025] I will be interning at Amazon this summer in Seattle as an Applied Scientist Intern.
+- [May 2025] I will be interning at Amazon this summer in Seattle as an Applied Scientist Intern.
 - [Apr. 2025] Check out our new preprint about [LLM persona simulation](https://arxiv.org/pdf/2305.08195.pdf)
 - [July 2024] I will present at *[The EPIC SPICE Intern Program](https://rprc.gmu.edu/)* about "LLM agent: build your own personal assistant"
 - [May 2024] I received the summer GRA Fellowship from [CHAMP GMU](https://cahmp.gmu.edu/)
