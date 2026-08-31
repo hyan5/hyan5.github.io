@@ -1,4 +1,8 @@
 ## News
+- [Aug. 2026] Our paper "Interpreting and Steering for Safe and Correct Code Generation" is accepted to *EMNLP 2026*.
+- [Aug. 2026] Our paper "[Guiding AI to Fix Its Own Flaws: An Empirical Study on LLM-Driven Secure Code Generation](https://arxiv.org/pdf/2506.23034)" is accepted to *ACM Transactions on Software Engineering and Methodology (TOSEM)*.
+- [May 2026] I am returning to Amazon in Seattle this summer as an Applied Scientist Intern.
+- [Aug. 2025] Our paper "[Can LLMs Simulate Personas with Reversed Performance?](https://arxiv.org/pdf/2504.06460)" is accepted to the *COLM 2025 Workshop on Social Simulation with LLMs*.
 - [May 2025] I will be interning at Amazon this summer in Seattle as an Applied Scientist Intern.
 - [Apr. 2025] Check out our new preprint about [LLM persona simulation](https://arxiv.org/pdf/2305.08195.pdf)
 - [July 2024] I will present at *[The EPIC SPICE Intern Program](https://rprc.gmu.edu/)* about "LLM agent: build your own personal assistant"
