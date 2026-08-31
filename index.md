@@ -11,9 +11,9 @@ I am a Ph.D. candidate in the [Department of Computer Science](https://cs.gmu.ed
 3. **🤖 LLM Reasoning & Agentic AI** — I probe the limits of LLMs' reasoning and instruction following, such as whether they can faithfully simulate personas of different skill levels in math reasoning (*COLM 2025 Workshop*), and I am excited about building LLM agents that plan, use tools, and act on users' behalf — from personal assistants to autonomous coding agents.
 4. **🤝 Human-AI Interaction & Conversational Code Generation** — I taught LLMs to simulate the natural-language feedback real users give (*ACL 2023*) and built conversational systems that open up code generation to people who have never written a line of code (*IntelliExplain*), so that anyone can tell an AI what they want — and get it.
 
-In the summer of 2025, I worked at **Amazon** in Seattle as an **Applied Scientist Intern**, where I gained hands-on experience applying LLM research to real-world products at industry scale. Prior to my Ph.D., I received my M.S. in Computer Science from George Mason University (2020) and my B.E. in Electronic and Information Engineering from Fujian Normal University (2017).
+In the summers of 2025 and 2026, I worked at **Amazon** in Seattle as an **Applied Scientist Intern**, where I gained hands-on experience applying LLM research to real-world products at industry scale. Prior to my Ph.D., I received my M.S. in Computer Science from George Mason University (2020) and my B.E. in Electronic and Information Engineering from Fujian Normal University (2017).
 
-Outside of research, I enjoy basketball, badminton, swimming, and hiking. I am also a foodie who loves exploring new restaurants and cooking at home.
+Outside of research, I enjoy basketball, badminton, and hiking. I am also a foodie who loves exploring new restaurants and cooking at home.
 
 **🔍 I am on the job market, seeking full-time positions as an Applied Scientist, Research Scientist, or related roles in industry and academia. Please feel free to reach out via [email](mailto:yanhao821@gmail.com)!**
 
