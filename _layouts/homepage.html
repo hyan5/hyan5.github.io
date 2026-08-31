@@ -72,12 +72,16 @@
         </a>
         {% endif %}
 
-
-
         {% if site.linkedin %}
         <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}">
           <i class="fab fa-linkedin"></i>
         </a>
+        {% endif %}
+
+        {% if site.resume_link %}
+        <div style="margin-top: 8px;">
+          <a class="resume-button" href="{{ site.resume_link }}" title="Download my resume" download>Resume</a>
+        </div>
         {% endif %}
 
         {% if site.twitter %}
