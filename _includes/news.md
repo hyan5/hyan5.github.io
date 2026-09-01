@@ -1,5 +1,5 @@
 ## News
-- [Aug. 2026] Our paper "Interpreting and Steering for Safe and Correct Code Generation" is accepted to *EMNLP 2026*.
+- [Aug. 2026] Our paper "[Interpreting and Steering for Safe and Correct Code Generation](https://arxiv.org/pdf/2608.30025)" is accepted to *EMNLP 2026*.
 - [Aug. 2026] Our paper "[Guiding AI to Fix Its Own Flaws: An Empirical Study on LLM-Driven Secure Code Generation](https://arxiv.org/pdf/2506.23034)" is accepted to *ACM Transactions on Software Engineering and Methodology (TOSEM)*.
 - [May 2026] I am returning to Amazon in Seattle this summer as an Applied Scientist Intern.
 - [Aug. 2025] Our paper "[Can LLMs Simulate Personas with Reversed Performance?](https://arxiv.org/pdf/2504.06460)" is accepted to the *COLM 2025 Workshop on Social Simulation with LLMs*.
