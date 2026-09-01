@@ -88,7 +88,7 @@ Data pattern: we label every pair by how the safe and vulnerable versions differ
 
 ## 6/6
 
-Huge thanks to my advisor @ZiyuYao for the guidance throughout this work. [add co-authors / funding / lab handle]
+Huge thanks to my advisor @ZiyuYao for the guidance throughout this work.
 
 📄 https://arxiv.org/abs/2608.30025
 🤗 https://huggingface.co/datasets/haaao821/CodeSec-Pairs
