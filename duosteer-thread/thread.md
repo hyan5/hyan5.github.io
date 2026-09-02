@@ -11,9 +11,10 @@ count as 23 each; figures are media and do not count).
 
 📢 New paper: Interpreting and Steering for Safe and Correct Code Generation
 
-DuoSteer steers safety and correctness at once, at the heads that causally control each. No correctness loss, no fine-tuning.
+DuoSteer steers safety + correctness at heads that causally control each. No fine-tuning.
 
--26.9% vulns, +7.5% correctness over 5 CWEs.
+✅ -26.9% vulns, +7.5% correctness (5 CWEs)
+✅ Beats prompting & SFT, on Llama & Qwen
 
 📄 https://arxiv.org/abs/2608.30025
 
