@@ -2,27 +2,20 @@
 
 Postable 6-post thread. Each post lists its figure under `figs/`. Post the figure
 as a native image (not a link) and paste the alt text (see FIG_MAP.md) as the
-image description.
+image description. Every post is trimmed to fit the 280-character limit (URLs
+count as 23 each; figures are media and do not count).
 
 ---
 
 ## 1/6
 
-📢 New Paper: "Interpreting and Steering for Safe and Correct Code Generation"
+📢 New paper: Interpreting and Steering for Safe and Correct Code Generation
 
-We make code LLMs write safer code without giving up correctness, at inference time, with no fine-tuning.
+DuoSteer steers safety and correctness at once, at the heads that causally control each. No correctness loss, no fine-tuning.
 
-How: DuoSteer steers two directions at once, one for safety and one for code-correctness, at the attention heads that causally control each. Security improves without breaking working code.
-
-🧵 What we found:
-
-• Code safety is encoded in a small set of attention heads, not spread across the model
-• Naive safety steering trades away correctness; DuoSteer steers both together and avoids it (-26.9% vulnerability, +7.5% correctness on average over 5 CWEs)
-• It beats the practical baselines people actually use, prompting and supervised fine-tuning
-• Holds on both Llama-3.1-8B and Qwen-2.5-Coder-7B
+-26.9% vulns, +7.5% correctness over 5 CWEs.
 
 📄 https://arxiv.org/abs/2608.30025
-🤗 https://huggingface.co/datasets/haaao821/CodeSec-Pairs
 
 FIG: figs/post1_duosteer.gif
 
@@ -30,13 +23,12 @@ FIG: figs/post1_duosteer.gif
 
 ## 2/6
 
-The data: CodeSec-Pairs, matched safe-vs-vulnerable Python code for the same task over 5 CWEs, labeled by CodeQL.
+The data: CodeSec-Pairs, matched safe vs vulnerable Python for the same task over 5 CWEs, labeled by CodeQL.
 
-Two kinds of pairs:
-• intra-prompt (same benign prompt, safe vs vulnerable by chance): trains the probes and steering vectors
-• cross-prompt (vulnerability-eliciting vs benign prompt): for causal head localization
+• intra-prompt: trains probes + steering vectors
+• cross-prompt: for causal head localization
 
-Llama-3.1-8B: 9,342 pairs (4,260 / 5,082). Qwen-2.5-Coder-7B: 2,500 (1,500 / 1,000). Plus safe-correct vs safe-incorrect pairs for the correctness direction.
+Llama: 9,342 pairs. Qwen: 2,500. Plus safe-correct vs safe-incorrect pairs.
 
 FIG: figs/llama_data_stat.png
 
@@ -46,25 +38,21 @@ FIG: figs/llama_data_stat.png
 
 Where is "safe vs vulnerable" decided? Two lenses disagree.
 
-Probing shows where it is encoded (linearly readable):
+Probing shows where it's linearly encoded. Causal knockout shows which heads actually cause it.
 
-FIG: figs/fig_probe_combined_heatmap.png (probe accuracy per layer/head)
+FIG: figs/fig_probe_combined_heatmap.png (probe accuracy) + figs/fig_causal_heatmap.png (causal effect)
 
-Causal knockout shows which heads actually cause it (blue = safe-promoting, red = vuln-promoting):
-
-FIG: figs/fig_causal_heatmap.png (causal effect per layer/head)
-
-The twist: they barely overlap. The causal heads are not the probe-salient ones (rank correlation near zero), so we steer at the causal heads.
+The twist: they barely overlap (rank correlation near zero). So we steer at the causal heads.
 
 ---
 
 ## 4/6
 
-Each direction is a mean-difference vector (safe minus vulnerable, and safe-correct minus safe-incorrect). At inference we add both to the causal heads, scaled by alpha. No retraining.
+Each direction is a mean-difference vector, added at the causal heads at inference, scaled by alpha. No retraining.
 
-It helps most where a CWE's fix follows a consistent pattern, like unsafe deserialization and XSS, and less on harder ones like certificate validation. Overall it beats prompting, fine-tuning, and single-vector steering, and replicates on Qwen.
+Works best where a CWE's fix is consistent (deserialization, XSS), less on cert validation. Beats prompting, SFT, and single-vector steering. Replicates on Qwen.
 
-FIG: figs/results_slideshow.gif (cycles the per-CWE result tables: Llama then Qwen)
+FIG: figs/results_slideshow.gif (per-CWE result tables: Llama then Qwen)
 
 ---
 
@@ -72,9 +60,9 @@ FIG: figs/results_slideshow.gif (cycles the per-CWE result tables: Llama then Qw
 
 Why does the benefit vary by CWE? Two reasons.
 
-Geometry: at the causal heads, the safety and correctness directions are near-orthogonal, which is what lets DuoSteer combine them.
+Geometry: at the causal heads, safety and correctness are near-orthogonal, so DuoSteer can combine them.
 
-Data: we label each pair by its fix pattern (substitute / guard / delete / unclear). The more concentrated a CWE's pattern, the better it steers. "Unclear"-dominated CWEs (path traversal, certificate validation) steer worst; this annotation signal rank-correlates with the reduction (Spearman rho ~= 0.90).
+Data: we label each pair's fix pattern. The more concentrated it is, the better it steers (Spearman rho ~0.90).
 
 ---
 
